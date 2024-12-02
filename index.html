@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replicoff - Luxury Replica Fashion</title>
+    <style>
+        /* Global Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Trebuchet MS', sans-serif;
+            background-color: #0A162A; /* Deep blue background */
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0A162A;
+            padding: 15px 20px;
+            border-bottom: 2px solid gold;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: gold;
+            font-family: 'Georgia', serif;
+        }
+        .menu {
+            display: flex;
+            gap: 25px;
+        }
+        .menu a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s;
+            font-family: 'Georgia', serif;
+        }
+        .menu a:hover {
+            color: #F0544F; /* Red */
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .search-bar input {
+            padding: 8px;
+            border: 2px solid gold;
+            border-radius: 5px;
+            background-color: #1C2C47;
+            color: white;
+        }
+        .search-bar button {
+            background-color: gold;
+            border: none;
+            padding: 8px 15px;
+            color: #0A162A;
+            cursor: pointer;
+        }
+        .search-bar button:hover {
+            background-color: #F0544F;
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 100px;
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to bottom, #0A162A, #1C2C47);
+            color: white;
+        }
+        .hero img {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+        .hero h1 {
+            font-size: 55px;
+            color: gold;
+            font-family: 'Georgia', serif;
+        }
+        .hero p {
+            font-size: 20px;
+            margin-top: 20px;
+            color: white;
+        }
+
+        /* Product Section */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 50px 20px;
+        }
+        .product {
+            background-color: #1C2C47;
+            color: white;
+            border: 2px solid gold;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .product h3 {
+            font-size: 22px;
+            padding: 10px;
+            color: gold;
+            font-family: 'Georgia', serif;
+        }
+        .product p {
+            font-size: 18px;
+            padding: 0 10px 10px;
+        }
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.5);
+        }
+        .product button {
+            background-color: gold;
+            color: #0A162A;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            font-size: 18px;
+            font-family: 'Georgia', serif;
+            cursor: pointer;
+        }
+        .product button:hover {
+            background-color: #F0544F; /* Red */
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0A162A;
+            border-top: 2px solid gold;
+        }
+        footer p {
+            font-size: 16px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Replicoff</div>
+        <nav class="menu">
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <img src="Téma.png" alt="Replicoff Emblem">
+        <h1>Welcome to Replicoff</h1>
+        <p>Elevating your style with premium replica fashion.</p>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="product">
+            <img src="https://via.placeholder.com/300x250" alt="Product 1">
+            <h3>Arabic-Inspired Jacket</h3>
+            <p>$109.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/300x250" alt="Product 2">
+            <h3>Luxury Shoes</h3>
+            <p>$89.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/300x250" alt="Product 3">
+            <h3>Elegant Handbag</h3>
+            <p>$139.99</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Replicoff. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
